@@ -1,0 +1,14 @@
+# crontab config
+# format
+# MM HH DM MN DW CMD
+	# MM	minute
+	# HH	hour
+	# DM	day of month
+	# MN	month
+	# DW  	day of week
+	# CMD	command
+
+
+# sundays at 11:59 PM run `update-pixy.sh`
+59 23  *  *  6  /pixy/util/update-pixy.sh
+
