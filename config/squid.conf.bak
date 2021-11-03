@@ -1,0 +1,30 @@
+# /etc/squid/squid.conf
+# Cole Roper
+# 2021-10-25
+
+
+# Setup
+# include /etc/squid/conf.d/*
+# coredump_dir /var/spool/squid
+
+
+# Directives
+# acl blacklist dstdomain DESKTOP-RCETKUC
+
+
+# Access List Rules
+# http_access allow all
+# http_access allow localnet
+http_access deny blacklist
+http_access allow all
+http_access deny all
+
+
+
+http_port 3128 intercept 	# proxy server listening
+http_port 3129
+# http_port 10.0.0.2:3129 intercept  # proxy server listening
+
+
+# terminate active connections
+shutdown_lifetime 5 seconds	# 5 seconds
