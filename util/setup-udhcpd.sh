@@ -18,7 +18,7 @@ DNS=$(grep -h "nameserver" "/home/pi/tmp.txt" | sed "s/^.* //")
 ([[ ! -z "$DNS" ]]) || DNS="8.8.8.8 8.8.4.4"
 
 ## append the dns servers to /etc/udhcpd.conf
-echo "option dns ${DNS}" >> "/home/pi/tmp.txt"
+echo "option dns ${DNS}" >> "/etc/udhcpd.conf"
 
 
 # SERVICE
