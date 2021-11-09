@@ -2,8 +2,8 @@
 # Cole Roper
 
 # The start and end of the IP lease block
-start		172.31.31.2
-end		    172.31.31.254
+start		10.0.1.50	#default: 192.168.0.20
+end		    10.0.1.55	#default: 192.168.0.254
 
 # The interface that udhcpd will use
 interface	eth1		#default: eth0
@@ -17,7 +17,8 @@ lease_file	/var/lib/misc/udhcpd.leases	#defualt: /var/lib/misc/udhcpd.leases
 # lines. The only option with a default is 'lease'.
 # opt	    dns	    8.8.8.8 8.8.4.4
 option		subnet	255.255.255.0
-opt	    	router	172.31.31.1
+opt	    	router	10.0.1.1
 option		lease	864000		# 10 days of seconds
 
 # dns option appended below
+
