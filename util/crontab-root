@@ -9,6 +9,6 @@
 	# CMD	command
 
 
-# sundays at 11:59 PM run `update-pixy.sh`
-59 23  *  *  6  /pixy/util/update-pixy.sh
+# sundays at 11:59 PM run `pixy-update.sh`
+59 23  *  *  6  /pixy/util/pixy-update.sh
 
