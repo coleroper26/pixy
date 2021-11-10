@@ -7,3 +7,5 @@
 
 ## setup udhcpd
 /pixy/util/udhcpd-setup.sh
+
+echo -e "[PIXY-START]\tDONE\n"

@@ -1,0 +1,8 @@
+#!/bin/bash
+##/etc/rc.local
+
+# PIXY
+/pixy/util/pixy-start.sh
+
+# DO NOT REMOVE
+exit 0
