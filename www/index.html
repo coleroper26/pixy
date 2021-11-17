@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index_style.css">
+        <title>Pixy - Management</title>
+    </head>
+    <body>
+        <center><h1>Pixy - Raspberry Pi Transparent Proxy</h1></center>
+        <center><h2>Management Interface</h2></center>
+
+
+        <form method="POST" action="update_filters.php">
+
+            <!-- ROW 1 -->
+            <div class="table-container">
+                <div class="table-item cat">
+                    <h2>Advert</h2>
+                </div>
+                <div class="table-item sel">
+                    <input type="radio" name="advert" value="1" checked>
+                    <label for="1">Enable</label>
+                    <input type="radio" name="advert" value="0">
+                    <label for="0">Disable</label>
+                </div>
+                <div class="table-item cat">
+                    <h2>Malware</h2>
+                </div>
+                <div class="table-item sel">
+                    <input type="radio" name="malware" value="1" checked>
+                    <label for="1">Enable</label>
+                    <input type="radio" name="malware" value="0">
+                    <label for="0">Disable</label>
+                </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="table-container">
+                <div class="table-item cat">
+                    <h2>Bypass</h2>
+                </div>
+                <div class="table-item sel">
+                    <input type="radio" name="bypass" value="1" checked>
+                    <label for="1">Enable</label>
+                    <input type="radio" name="bypass" value="0">
+                    <label for="0">Disable</label>
+                </div>
+                <div class="table-item cat">
+                    <h2>Pornography</h2>
+                </div>
+                <div class="table-item sel">
+                    <input type="radio" name="pornography" value="1" checked>
+                    <label for="1">Enable</label>
+                    <input type="radio" name="pornography" value="0">
+                    <label for="0">Disable</label>
+                </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="table-container">
+                <div class="table-item cat">
+                    <h2>Gambling</h2>
+                </div>
+                <div class="table-item sel">
+                    <input type="radio" name="gambling" value="1" checked>
+                    <label for="1">Enable</label>
+                    <input type="radio" name="gambling" value="0">
+                    <label for="0">Disable</label>
+                </div>
+                <div class="table-item cat">
+                    <h2>Torrent</h2>
+                </div>
+                <div class="table-item sel">
+                    <input type="radio" name="torrent" value="1" checked>
+                    <label for="1">Enable</label>
+                    <input type="radio" name="torrent" value="0">
+                    <label for="0">Disable</label>
+                </div>
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="table-container">
+                <div class="table-item cat">
+                    <h2>Illegal</h2>
+                </div>
+                <div class="table-item sel">
+                    <input type="radio" name="illegal" value="1" checked>
+                    <label for="1">Enable</label>
+                    <input type="radio" name="illegal" value="0">
+                    <label for="0">Disable</label>
+                </div>
+                <div class="table-item cat">
+                    <h2>Violence</h2>
+                </div>
+                <div class="table-item sel">
+                    <input type="radio" name="violence" value="1" checked>
+                    <label for="1">Enable</label>
+                    <input type="radio" name="violence" value="0">
+                    <label for="0">Disable</label>
+                </div>
+            </div>
+
+            <!-- ROW 5 -->
+            <div class="table-container">
+                <div class="table-item-fin">
+                    <input type="submit" name="submit" value="APPLY" />
+                </div>
+            </div>
+
+            <!-- ROW 6 -->
+            <div class="table-container">
+                <div class="table-item-fin">
+                    <img src="http_response_times.png">
+                </div>
+            </div>
+
+        </form>
+
+    </body>
+</html>
